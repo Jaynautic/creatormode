@@ -3,10 +3,17 @@
     "name": "Creator Mode",
     "description": "Blocks Websites Until You Create Something",
     "version": "1.0.0",
+    "content_scripts": [
+        {
+            "matches": ["https://x.com/*"],
+            "js": ["content.js"]
+        }
+    ],
     "icons": {"128": "assets/croclogo128.png"},
     "action": {
         "default_icon": "assets/croclogo19.png",
         "default_popup": "popup.html"
     },
-    "permissions": ["activeTab"]
+    "permissions": ["activeTab"],
+    "host_permissions": ["*://*.google.com/*"]
 }
