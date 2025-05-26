@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": { "extensionPath": "/index.html" }
+    },
+    "condition": {
+      "urlFilter": "cathedralresearch.com",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": { "extensionPath": "/index.html" }
+    },
+    "condition": {
+      "urlFilter": "youtube.com",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": { "extensionPath": "/index.html" }
+    },
+    "condition": {
+      "urlFilter": "x.com",
+      "resourceTypes": ["main_frame", "sub_frame", "script"]
+    }
+  }
+]

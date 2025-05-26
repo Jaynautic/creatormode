@@ -3,17 +3,22 @@
     "name": "Creator Mode",
     "description": "Blocks Websites Until You Create Something",
     "version": "1.0.0",
-    "content_scripts": [
-        {
-            "matches": ["https://x.com/*"],
-            "js": ["content.js"]
-        }
-    ],
     "icons": {"128": "assets/croclogo128.png"},
     "action": {
         "default_icon": "assets/croclogo19.png",
         "default_popup": "popup.html"
     },
-    "permissions": ["activeTab"],
-    "host_permissions": ["*://*.google.com/*"]
+    "permissions": ["activeTab", "declarativeNetRequest"],
+    "host_permissions": ["*://*/*"],
+    "declarative_net_request": {
+        "rule_resources": [{
+            "id": "blockRules",
+            "enabled": true,
+            "path": "rules.json"
+        }]
+    },
+    "web_accessible_resources": [{
+        "resources": ["index.html"],
+        "matches": ["<all_urls>"]
+    }]
 }

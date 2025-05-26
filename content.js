@@ -1,30 +1,42 @@
 const websitesToBlock = [
-    "x.com"
+    "cathedralresearch.com"
 ];
 
-let focusTime = true;
+// chrome.webRequest.onBeforeRequest.addListener(
+//   function(details) {
+//     for (const site of blockedSites) {
+//       if (details.url.includes(site)) {
+//         return { redirectUrl: chrome.runtime.getURL("index.html") };
+//       }
+//     }
+//   },
+//   { urls: ["<all_urls>"] },
+//   ["blocking"]
+// );
 
-const blockBadSites = async () => {
-    if (focusTime === true) {
-        for (const domain of websitesToBlock) {
-            if (window.location.hostname.includes(domain)) {
-                let newNode = document.createElement("div");
-                newNode.id = "test12345";
-                newNode.style.cssText = "position:absolute;width=100%;height=100%;z-index=100;background-color=blue;"
-                newNode.innerHTML = `<div style="color:white;display:flex;"> get to work </div>`;
-                document.body.style.overflow = "hidden";
-                document.body.appendChild(newNode);
-            }
-        }
-    }
-};
+// let focusTime = true;
 
-const unblockBadSites = async () => {
+// const blockBadSites = async () => {
+//     if (focusTime === true) {
+//         for (const domain of websitesToBlock) {
+//             if (window.location.hostname.includes(domain)) {
+//                 let newNode = document.createElement("div");
+//                 newNode.id = "test12345";
+//                 newNode.style.cssText = "position:absolute;width=100%;height=100%;z-index=100;background-color=blue;"
+//                 newNode.innerHTML = `<div style="color:white;display:flex;"> get to work </div>`;
+//                 document.body.style.overflow = "hidden";
+//                 document.body.appendChild(newNode);
+//             }
+//         }
+//     }
+// };
 
-};
+// const unblockBadSites = async () => {
 
-blockBadSites();
+// };
 
-chrome.runtime.onMessage.addListener((message) => {
+// blockBadSites();
 
-});
+// chrome.runtime.onMessage.addListener((message) => {
+
+// });
