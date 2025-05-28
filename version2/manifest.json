@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Creator Mode",
+    "description": "Blocks Websites Until You Create Something",
+    "version": "1.0",
+    "icons": {"128": "assets/croclogo128.png"},
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "assets/croclogo19.png"
+    },
+    "permissions": ["scripting", "activeTab", "cookies"],
+    "host_permissions": ["<all_urls>"],
+    "content_scripts": [
+      {
+        "js": ["scripts/content.js"],
+        "matches": [
+          "https://developer.chrome.com/docs/extensions/*",
+          "https://developer.chrome.com/docs/webstore/*",
+          "https://www.youtube.com/",
+          "<all_urls>"
+        ]
+      }
+    ]
+  }

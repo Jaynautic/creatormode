@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Creator Mode</title>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open-Sans" type="text/css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  
+    <style>
+        html, body {
+            /* font-family: 'Open Sans', sans-serif; */
+            font-size: 14px;
+            margin: 0;
+            min-height: 180px;
+            padding: 0;
+            width: 384px;
+        }
+
+        h1 {
+            /* font-family: 'Open Sans', sans-serif; */
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0;
+            color: #218000;
+        }
+
+        a:link, a:visited {
+            color: black;
+            outline: 0;
+            text-decoration: none;
+        }
+
+        img {
+            width: 30px;
+        }
+
+        .modal-header {
+            align-items: center;
+            border-bottom: 0.5px solid #dadada;
+        }
+
+        .modal-content {
+            padding: 0 22px;
+        }
+
+        .modal-icons {
+            border-top: 0.5px solid #dadada;
+            height: 50px;
+            width: 100%;
+        }
+
+        .logo {
+            padding: 16px;
+        }
+
+        .logo-icon {
+            vertical-align: text-bottom;
+            margin-right: 12px;
+        }
+
+        .version {
+            color: #444;
+            font-size: 18px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 22px;
+        }
+
+        .flex {
+            opacity: 1;
+            transition: opacity 0.2s ease-in-out;
+            width: 120px;
+        }
+
+        .flex:hover {
+            opacity: 0.4;
+        }
+
+        .flex .fa {
+            font-size: 40px;
+            color: #218000;
+        }
+    </style>
+
+</head>
+  <body>
+    <div class="modal-header">
+        <h1 class="logo">
+            <img src="assets/croclogo128.png" alt="Creator Mode Logo" class="logo-icon"> Creator Mode
+            <span class="version">(1.0.0)</span>
+        </h1>
+    </div>
+    <div class="modal-content">
+        <p>Blocks websites until you have created something</p>
+    </div>
+    <script src="scripts/popup.js"></script>
+  </body>
+</html>
