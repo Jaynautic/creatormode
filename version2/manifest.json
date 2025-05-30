@@ -9,7 +9,7 @@
       "default_icon": "assets/croclogo19.png"
     },
     "permissions": ["scripting", "activeTab", "cookies"],
-    "host_permissions": ["<all_urls>"],
+    "host_permissions": ["<all_urls>", "https://*/*", "http://*/*"],
     "content_scripts": [
       {
         "js": ["scripts/content.js"],
@@ -17,7 +17,7 @@
           "https://developer.chrome.com/docs/extensions/*",
           "https://developer.chrome.com/docs/webstore/*",
           "https://www.youtube.com/",
-          "<all_urls>"
+          "<all_urls>", "https://*/*", "http://*/*"
         ]
       }
     ]
