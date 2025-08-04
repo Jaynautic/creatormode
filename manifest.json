@@ -1,0 +1,40 @@
+{
+    "manifest_version": 3,
+    "name": "Creator Mode",
+    "description": "Blocks Websites Until You Create Something",
+    "version": "0.4",
+    "icons": {"128": "assets/croclogo128.png"},
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "assets/croclogo19.png"
+    },
+    "permissions": ["declarativeNetRequest", "declarativeNetRequestFeedback", "declarativeNetRequestWithHostAccess", "scripting", "activeTab", "cookies", "storage"],
+    "host_permissions": ["<all_urls>", "https://*/*", "http://*/*"],
+    "background": {
+      "service_worker": "scripts/service_worker.js"
+    },
+    "content_scripts": [
+      {
+        "js": ["scripts/content.js"],
+        "matches": [
+          "<all_urls>", "https://*/*", "http://*/*"
+        ]
+      }
+    ],
+    "declarative_net_request": {
+      "rule_resources": [
+        {
+          "id": "ruleset_1",
+          "enabled": true,
+          "path": "rules.json"
+        }
+      ]
+    },
+    "web_accessible_resources": [{
+      "resources": ["redirect.html"],
+      "matches": ["<all_urls>"]
+    }],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self';"
+    }
+  }
