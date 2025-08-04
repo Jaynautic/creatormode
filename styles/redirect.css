@@ -1,0 +1,95 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    /* border: solid blue 2px; */
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+}
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 64px;
+    /* border: solid green 2px; */
+}
+
+.content-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    /* border: solid red 2px; */
+}
+
+#prompt {
+    margin-bottom: 44px;
+}
+
+#main-text {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 28px;
+    color: white;
+}
+
+.prompt-text {
+    width: 400px;
+    font-size: 24px;
+    word-wrap: normal;
+}
+
+#second-text {
+    color: white;
+}
+
+#third-text {
+    color: #FFD015;
+}
+
+#progress-text {
+    color: white;
+    opacity: 40%;
+}
+
+#creative-input {
+    width: 400px;
+    height: 200px;
+    font-family: Inter;
+    font-size: 18px;
+    border: none;
+    background-color: black;
+    resize: none;
+    color: white;
+    font-size: 16px;
+    text-align: left;
+    vertical-align: top;
+}
+
+#creative-input:focus {
+    outline: none;
+}
+
+#main-button {
+    width: 200px;
+    height: 50px;
+    margin: 40px;
+    font-size: 36px
+}
+
+.dev-tag {
+    position: absolute;
+    color: white;
+    font-weight: 100;
+    opacity: 40%;
+    text-align: center;
+    width: 98%;
+    bottom: 0;
+    padding-bottom: 24px;
+}
