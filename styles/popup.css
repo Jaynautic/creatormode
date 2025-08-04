@@ -1,0 +1,51 @@
+html, body {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 14px;
+    margin: 0;
+    min-height: 180px;
+    padding: 0;
+    width: 384px;
+}
+
+h1 {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+    color: #218000;
+}
+
+img {
+    width: 30px;
+}
+
+.modal-header {
+    align-items: center;
+    border-bottom: 0.5px solid #dadada;
+}
+
+.modal-content {
+    padding: 0 22px;
+}
+
+.text-content {
+    margin: 8px;
+}
+
+.toggle-button {
+    margin: 8px;
+}
+
+.logo {
+    padding: 16px;
+}
+
+.logo-icon {
+    vertical-align: text-bottom;
+    margin-right: 12px;
+}
+
+.version {
+    color: #444;
+    font-size: 18px;
+}
